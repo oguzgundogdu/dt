@@ -28,4 +28,3 @@ CONSTRAINT t_comments_pkey PRIMARY KEY(comment_id),
 CONSTRAINT t_comments_t_articles_fkey FOREIGN KEY (article_id) REFERENCES public.t_articles(article_id)
 )WITH (fillfactor = 99, oids = false);
 
-SELECT * FROM public.t_users
